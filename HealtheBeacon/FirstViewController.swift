@@ -95,6 +95,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
     @IBAction func submit(sender: UIButton) {
         defaults.setValue(cernerIDTextField.text, forKey: "cernerID")
         defaults.setValue(teamsDictionary[teams[pickerView.selectedRowInComponent(0)]], forKey: "teamID")
+        //defaults.setValue("SecondViewController", forKey: "LaunchView")
     }
 }
 

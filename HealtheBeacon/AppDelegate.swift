@@ -20,6 +20,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let launchview = defaults.stringForKey("LaunchView")
+        {
+            if launchview == "FirstViewController" {
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                appDelegate.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let yourVC = mainStoryboard.instantiateViewControllerWithIdentifier("VC1") as! FirstViewController
+                appDelegate.window?.rootViewController = yourVC
+                appDelegate.window?.makeKeyAndVisible()
+            }
+            else if launchview == "SecondViewController" {
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                appDelegate.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let yourVC = mainStoryboard.instantiateViewControllerWithIdentifier("VC2") as! SecondViewController
+                appDelegate.window?.rootViewController = yourVC
+                appDelegate.window?.makeKeyAndVisible()
+            }
+        }
         return true
     }
     

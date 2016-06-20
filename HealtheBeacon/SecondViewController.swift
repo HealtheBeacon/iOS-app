@@ -37,7 +37,7 @@ class SecondViewController: UIViewController, CBPeripheralManagerDelegate {
             print("Successfully started advertising beacon data")
             
             let message = "Successfully set up beacon. " +
-                "The unique identifier of our service is: \(uuid.UUIDString)"
+                "The unique identifier is: \(uuid.UUIDString)"
             
             print(message)
             
@@ -117,7 +117,6 @@ class SecondViewController: UIViewController, CBPeripheralManagerDelegate {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
         let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
         peripheralManager = CBPeripheralManager(delegate: self, queue: queue)
         if let manager = peripheralManager{
