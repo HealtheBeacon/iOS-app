@@ -34,9 +34,9 @@ class SecondViewController: UIViewController, CBPeripheralManagerDelegate {
                                               error: NSError?){
         
         if error == nil{
-            print("Successfully started advertising our beacon data")
+            print("Successfully started advertising beacon data")
             
-            let message = "Successfully set up your beacon. " +
+            let message = "Successfully set up beacon. " +
                 "The unique identifier of our service is: \(uuid.UUIDString)"
             
             print(message)
@@ -113,7 +113,6 @@ class SecondViewController: UIViewController, CBPeripheralManagerDelegate {
             peripheral.startAdvertising(dataToBeAdvertised)
             
         }
-        
     }
     
     override func viewDidAppear(animated: Bool) {
