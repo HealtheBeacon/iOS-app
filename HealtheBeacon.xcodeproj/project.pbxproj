@@ -14,6 +14,7 @@
 		459671681D13838E00325567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459671671D13838E00325567 /* Assets.xcassets */; };
 		4596716B1D13838E00325567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459671691D13838E00325567 /* LaunchScreen.storyboard */; };
 		459671761D13838E00325567 /* HealtheBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459671751D13838E00325567 /* HealtheBeaconTests.swift */; };
+		459671851D13B3BD00325567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459671841D13B3BD00325567 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		459671711D13838E00325567 /* HealtheBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealtheBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		459671751D13838E00325567 /* HealtheBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealtheBeaconTests.swift; sourceTree = "<group>"; };
 		459671771D13838E00325567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		459671841D13B3BD00325567 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				459671671D13838E00325567 /* Assets.xcassets */,
 				459671691D13838E00325567 /* LaunchScreen.storyboard */,
 				4596716C1D13838E00325567 /* Info.plist */,
+				459671841D13B3BD00325567 /* ViewController.swift */,
 			);
 			path = HealtheBeacon;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				459671631D13838D00325567 /* SecondViewController.swift in Sources */,
 				4596715F1D13838D00325567 /* AppDelegate.swift in Sources */,
+				459671851D13B3BD00325567 /* ViewController.swift in Sources */,
 				459671611D13838D00325567 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
